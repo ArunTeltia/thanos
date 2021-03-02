@@ -54,6 +54,9 @@ jobs:
 
       - name: Linting & vetting.
         run: make go-lint
+      
+      - name: Generate a Production Build
+        run: make assets
   e2e:
     runs-on: ubuntu-latest
     name: Thanos end-to-end tests
